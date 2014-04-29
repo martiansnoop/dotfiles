@@ -1,0 +1,14 @@
+[user]
+	name = Emily Wenberg
+	email = ewenberg@llnw.com
+[credential]
+	helper = osxkeychain
+[core]
+	autocrlf = input
+	excludesfile = /Users/ewenberg/.gitignoreGlobal
+[color]
+	ui = true
+[alias]
+	unstage = reset HEAD --
+[push]
+	default = current
