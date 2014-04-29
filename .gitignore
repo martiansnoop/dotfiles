@@ -23,6 +23,7 @@
 .netrc
 .node-gyp
 .npm
+.oh-my-zsh
 .profile
 .putty
 .python-eggs
@@ -33,10 +34,14 @@
 .scala_history
 .ssh
 .viminfo
+.netrwhist
 .wireshark
 .wireshark-etc
 .yjp
 .zlogin
+.zcompdump-ewenberg-5.0.5
+.zsh-update
+.zsh_history
 Applications
 Code
 Desktop
