@@ -6,7 +6,7 @@
 .atom
 .bash_history
 .cache
-.chef/ewenberg.pem
+.chef
 .chef-bak
 .config
 .dropbox
@@ -23,7 +23,17 @@
 .netrc
 .node-gyp
 .npm
-.oh-my-zsh
+#.oh-my-zsh
+.oh-my-zsh/.gitignore
+.oh-my-zsh/MIT-LICENSE.txt
+.oh-my-zsh/README.textile
+.oh-my-zsh/lib/
+.oh-my-zsh/log/
+.oh-my-zsh/oh-my-zsh.sh
+.oh-my-zsh/plugins/
+.oh-my-zsh/templates/
+.oh-my-zsh/themes/
+.oh-my-zsh/tools/
 .profile
 .putty
 .python-eggs
