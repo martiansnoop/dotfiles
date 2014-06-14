@@ -7,4 +7,5 @@ build
 *.swo
 Default
 .netrwhist
+.vim/.netrwhist
 *~
