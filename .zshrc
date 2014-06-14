@@ -45,7 +45,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(knife brew mvn)
+plugins=(brew mvn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,7 +77,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export ANDROID_HOME=`brew --prefix android`
 export PATH=$ANDROID_HOME:$PATH
 
-alias ls="ls -la"
+alias ls="ls -laG"
 
 #bump /usr/local/bin up in the path 
 export PATH="/usr/local/bin:$PATH"
