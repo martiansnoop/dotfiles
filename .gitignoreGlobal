@@ -4,4 +4,7 @@
 target/
 build
 *.swp
+*.swo
 Default
+.netrwhist
+*~
