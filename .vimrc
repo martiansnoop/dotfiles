@@ -1,22 +1,9 @@
 set nocompatible
 
-"pathogen setup
-" Not sure which of these is required because I'm in blind C&P mode
-execute pathogen#infect()
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-
 " Syntax highlighting and theme
 syntax on
-"filetype plugin indent on
-"let g:solarized_termcolors=16
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
 syntax enable
-"set t_Co=16
-"set background=dark
 colorscheme distinguished
-"highlight LineNr ctermbg=black
 
 map <down> gj
 map <up> gk
