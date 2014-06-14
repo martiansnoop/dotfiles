@@ -1,5 +1,4 @@
 set nocompatible
-"let mapleader = ","
 
 "pathogen setup
 " Not sure which of these is required because I'm in blind C&P mode
@@ -9,14 +8,14 @@ call pathogen#runtime_append_all_bundles()
 
 " Syntax highlighting and theme
 syntax on
-filetype plugin indent on
+"filetype plugin indent on
 "let g:solarized_termcolors=16
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 syntax enable
-set t_Co=16
-set background=dark
-colorscheme solarized
+"set t_Co=16
+"set background=dark
+colorscheme distinguished
 "highlight LineNr ctermbg=black
 
 map <down> gj
@@ -79,5 +78,3 @@ nmap <silent> ,/ :nohlsearch<CR>
 " do this by typing w!!
 cmap w!! w !sudo tee % >/dev/null
 
-
-"au FileType javascript call JavaScriptFold()
