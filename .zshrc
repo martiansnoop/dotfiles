@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 export ANDROID_HOME=`brew --prefix android`
-export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$ANDROID_HOME/bin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$ANDROID_HOME/bin:$PATH
 
 alias ls="ls -laG"
 
