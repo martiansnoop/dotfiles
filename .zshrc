@@ -7,7 +7,7 @@ plugins=(brew mvn)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 export ANDROID_HOME=`brew --prefix android`
 export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$ANDROID_HOME/bin:$PATH
 
