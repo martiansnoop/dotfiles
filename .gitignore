@@ -25,6 +25,7 @@
 .npm
 #.oh-my-zsh
 .profile
+.psql_history
 .putty
 .python-eggs
 .rnd
