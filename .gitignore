@@ -34,6 +34,7 @@
 .sbtconfig
 .scala_history
 .ssh
+.squadron
 .viminfo
 .wireshark
 .wireshark-etc
