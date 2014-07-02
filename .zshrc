@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-plugins=(brew mvn)
+plugins=(brew mvn grunt)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -17,3 +17,4 @@ alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js)$' | xargs wc -l"
 
 alias untar="tar xvzf"
+alias password="openssl rand -base64 12"
