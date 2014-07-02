@@ -11,6 +11,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 export ANDROID_HOME=`brew --prefix android`
 POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.3
 export PATH=$HOME/bin:/usr/local/bin:$POSTGRES_HOME/bin:$PATH
+export TERM=xterm-256color
 
 alias ls="ls -laG"
 
