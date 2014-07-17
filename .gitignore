@@ -45,6 +45,7 @@
 .zsh-update
 .zsh_history
 Applications
+bin
 Code
 Desktop
 Documents
@@ -54,6 +55,7 @@ Library
 Movies
 Music
 MyCode
+noversion
 Pictures
 Public
 Sites
