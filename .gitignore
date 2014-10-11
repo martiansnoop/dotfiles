@@ -62,3 +62,6 @@ Sites
 Work
 VirtualBox VMs
 *.pem
+.boto
+.s3cfg
+tmp/
