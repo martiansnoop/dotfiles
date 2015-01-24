@@ -5,6 +5,7 @@
 .Xauthority
 .android
 .atom
+.aws
 .bash_history
 .cache
 .chef
@@ -13,6 +14,7 @@
 .dropbox
 .dropbox-master
 .fontconfig
+.gem
 .ghc
 .git-completion.bash
 .gradle
