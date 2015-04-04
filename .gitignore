@@ -68,3 +68,6 @@ VirtualBox VMs
 .boto
 .s3cfg
 tmp/
+.nbprofiler/
+.tsd-cache/
+
