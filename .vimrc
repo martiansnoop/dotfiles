@@ -3,7 +3,7 @@ set nocompatible
 " Syntax highlighting and theme
 syntax on
 syntax enable
-colorscheme distinguished
+colorscheme jellybeans 
 
 map <down> gj
 map <up> gk
