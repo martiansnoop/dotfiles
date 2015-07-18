@@ -1,6 +1,6 @@
 # Simple theme inspired by the kardan theme
 
-PROMPT='%{$fg_bold[black]%}> %{$reset_color%}'
+PROMPT='%{$fg_bold[black]%}%n@%m > %{$reset_color%}'
 RPROMPT='%{$fg_bold[black]%}$(git_prompt_info) ${_current_dir}'
 
 local _current_dir="%{$fg_bold[black]%}%3~%{$reset_color%} "
