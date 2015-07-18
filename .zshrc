@@ -1,17 +1,35 @@
+if [[ `uname` == 'Linux' ]]
+then
+        export LINUX=1
+else
+        export LINUX=
+fi
+
+if [[ `uname` == 'Darwin' ]]
+then
+        export OSX=1
+else
+        export OSX=
+fi
+
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-plugins=(brew mvn grunt)
+if [[ $OSX == 1 ]] then plugins=(brew mvn grunt) fi
 source $ZSH/oh-my-zsh.sh
 
-POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
 HOME_PATH=$HOME/bin
-BREW_PATH=/usr/local/bin
-export PATH=$HOME_PATH:$BREW_PATH:$POSTGRES_PATH:$PATH
+export PATH=$HOME_PATH:$PATH
 
-export TERM=xterm-256color
-export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+if [[ $OSX == 1 ]]
+then
+  POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
+  BREW_PATH=/usr/local/bin
+  export PATH=$BREW_PATH:$POSTGRES_PATH:$PATH
+  export TERM=xterm-256color
+  export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+fi
 
 alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js)$' | xargs wc -l"
