@@ -5,7 +5,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 plugins=(brew mvn grunt)
 source $ZSH/oh-my-zsh.sh
 
-POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin
+POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
 HOME_PATH=$HOME/bin
 BREW_PATH=/usr/local/bin
 export PATH=$HOME_PATH:$BREW_PATH:$POSTGRES_PATH:$PATH
