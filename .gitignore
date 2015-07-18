@@ -71,4 +71,8 @@ VirtualBox VMs
 tmp/
 .nbprofiler/
 .tsd-cache/
-
+.bash_logout
+.bashrc
+.chefdk/
+.vim/.netrwhist
+flyway/
