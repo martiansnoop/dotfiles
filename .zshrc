@@ -19,9 +19,6 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 if [[ $OSX == 1 ]] then plugins=(brew mvn grunt zsh-syntax-highlighting) fi
 source $ZSH/oh-my-zsh.sh
 
-HOME_PATH=$HOME/bin
-export PATH=$HOME_PATH:$PATH
-
 if [[ $OSX == 1 ]]
 then
   POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
@@ -30,6 +27,9 @@ then
   export TERM=xterm-256color
   export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 fi
+
+HOME_PATH=$HOME/bin
+export PATH=$HOME_PATH:$PATH
 
 alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js)$' | xargs wc -l"
