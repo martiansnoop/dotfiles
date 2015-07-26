@@ -17,7 +17,7 @@ ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
 if [[ $OSX == 1 ]] then plugins=(brew mvn grunt zsh-syntax-highlighting) fi
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh-custom/ewenberg.zsh-theme
 
 if [[ $OSX == 1 ]]
 then
