@@ -76,3 +76,4 @@ tmp/
 .chefdk/
 .vim/.netrwhist
 flyway/
+.psql_history-
