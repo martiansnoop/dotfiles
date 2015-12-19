@@ -1,22 +1,11 @@
-if [[ `uname` == 'Linux' ]]
-then
-        export LINUX=1
-else
-        export LINUX=
-fi
-
-if [[ `uname` == 'Darwin' ]]
-then
-        export OSX=1
-else
-        export OSX=
-fi
+[[ `uname` == 'Linux' ]] && export LINUX=1
+[[ `uname` == 'Darwin' ]] && export OSX=1
 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-if [[ $OSX == 1 ]] then plugins=(brew mvn grunt zsh-syntax-highlighting) fi
+[[ $OSX == 1 ]] && plugins=(brew mvn grunt zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 if [[ $OSX == 1 ]]
