@@ -1,3 +1,4 @@
+" I don't actually know what this does but people think it's important
 set nocompatible
 
 " Syntax highlighting and theme
@@ -5,9 +6,11 @@ syntax on
 syntax enable
 colorscheme jellybeans 
 
+" Make j and k respect wrapped lines
 map <down> gj
 map <up> gk
 
+" I remember liking this at one point, haven't used it in literally years
 func! WordProcessorMode() 
   setlocal formatoptions=1 
   setlocal noexpandtab 
