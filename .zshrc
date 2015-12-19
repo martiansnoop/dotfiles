@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-[[ $OSX == 1 ]] && plugins=(brew mvn grunt zsh-syntax-highlighting)
+[[ $OSX == 1 ]] && plugins=(brew mvn zsh-syntax-highlighting)
 [[ $LINUX == 1 ]] && plugins=(zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
