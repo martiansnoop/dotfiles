@@ -77,3 +77,7 @@ tmp/
 .vim/.netrwhist
 flyway/
 .psql_history-
+.IntelliJIdea15/
+.babel.json
+.cups/
+.oracle_jre_usage/
