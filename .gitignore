@@ -81,3 +81,4 @@ flyway/
 .babel.json
 .cups/
 .oracle_jre_usage/
+nohup.out
