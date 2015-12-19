@@ -35,3 +35,5 @@ alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js)$' | xargs wc -l"
 alias untar="tar xvzf"
 alias password="openssl rand -base64 12"
+alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+#alias timestamptz='date +%Y-%m-%dT%H:%M:%S%z'
