@@ -21,6 +21,8 @@ fi
 HOME_PATH=$HOME/bin
 export PATH=$HOME_PATH:$PATH
 
+export EDITOR=vim
+
 alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js|ts|html)$' | xargs wc -l"
 alias untar="tar xvzf"
