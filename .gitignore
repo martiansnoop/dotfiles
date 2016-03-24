@@ -81,4 +81,9 @@ flyway/
 .babel.json
 .cups/
 .oracle_jre_usage/
+.arcrc
+.idea-build/
+.nvm/
+.sh_history
+Elasticsearch/
 nohup.out
