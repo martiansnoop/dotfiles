@@ -23,6 +23,9 @@ export PATH=$HOME_PATH:$PATH
 
 export EDITOR=vim
 
+compdef pssh=ssh
+compdef pscp=scp
+
 alias ls="ls -laG"
 alias lines_of_code="git ls-files | egrep '(xml|java|as|mxml|js|ts|html)$' | xargs wc -l"
 alias untar="tar xvzf"
