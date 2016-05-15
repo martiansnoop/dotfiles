@@ -1,6 +1,20 @@
 " I don't actually know what this does but people think it's important
 set nocompatible
 
+" VUNDLE SETUP
+" This is a thing that Vundle wants 
+filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+" do other plugin shit here before the call to vundle end
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 " Syntax highlighting and theme
 syntax on
 syntax enable
