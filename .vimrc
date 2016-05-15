@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
 " do other plugin shit here before the call to vundle end
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,6 +35,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 set hidden
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is two spaces
+set softtabstop=2     " a tab is two spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
