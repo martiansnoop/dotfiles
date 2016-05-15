@@ -24,20 +24,6 @@ colorscheme jellybeans
 map <down> gj
 map <up> gk
 
-" I remember liking this at one point, haven't used it in literally years
-func! WordProcessorMode() 
-  setlocal formatoptions=1 
-  setlocal noexpandtab 
-  map <down> gj 
-  map <up> gk
-  setlocal spell spelllang=en_us 
-  set complete+=s
-  set formatprg=par
-  setlocal wrap 
-  setlocal linebreak 
-endfu 
-com! WP call WordProcessorMode()
-
 " I got most of the following crap from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
