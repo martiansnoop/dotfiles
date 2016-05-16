@@ -11,10 +11,40 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
+Plugin 'leafgarland/typescript-vim'
+" Plugin 'scrooloose/syntastic' " disable syntastic until I figure out how to
+" make it fast
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'godlygeek/tabular' " vim-markdown depends on this
+Plugin 'plasticboy/vim-markdown'
 " do other plugin shit here before the call to vundle end
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" vim markdown setup
+let g:vim_markdown_folding_disabled = 1
+
+" Syntastic setup
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_typescript_checkers = ['tslint']
+
+" YouCompleteMe setup
+" YCM gives you popups and splits by default that some people might not
+" like, so these should tidy it up a bit for you.
+let g:ycm_add_preview_to_completeopt=0
+let g:ycm_confirm_extra_conf=0
+set completeopt-=preview
 
 " Syntax highlighting and theme
 syntax on
