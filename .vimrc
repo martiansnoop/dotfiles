@@ -17,14 +17,15 @@ set nocompatible
  " Refer to |:NeoBundle-examples|.
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'pangloss/vim-javascript'
-" NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'leafgarland/typescript-vim'
 " NeoBundleLazy 'scrooloose/syntastic'
-" NeoBundle 'Valloric/YouCompleteMe', {'lazy': 1}
+NeoBundleLazy 'Valloric/YouCompleteMe', {
+      \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby'] }
+      \}
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'godlygeek/tabular' " vim-markdown depends on this
-NeoBundle 'plasticboy/vim-markdown'
+" NeoBundle 'godlygeek/tabular' " vim-markdown depends on this
+" NeoBundle 'plasticboy/vim-markdown'
 
  call neobundle#end()
 
