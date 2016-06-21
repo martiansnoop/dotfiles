@@ -134,3 +134,4 @@ nmap <silent> ,/ :nohlsearch<CR>
 " do this by typing w!!
 cmap w!! w !sudo tee % >/dev/null
 
+set showcmd
