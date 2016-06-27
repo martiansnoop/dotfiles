@@ -57,6 +57,17 @@
             KeyCode::CURSOR_RIGHT
         </autogen>
     </item>
+    <item>
+        <name>Make pok3r's right shift+esc be ~</name>
+        <identifier>stuff</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::ESCAPE,
+            ModifierFlag::SHIFT_R,
+            KeyCode::BACKQUOTE,
+            ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
     
     
     <appdef>
@@ -89,4 +100,5 @@
 
         </item>
     </item>
+
 </root>
