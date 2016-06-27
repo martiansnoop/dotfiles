@@ -8,7 +8,9 @@
 .atom
 .aws
 .bash_history
+.berkshelf
 .cache
+.cargo
 .chef
 .chef-bak
 .config
