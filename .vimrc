@@ -21,8 +21,9 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'leafgarland/typescript-vim'
 " NeoBundleLazy 'scrooloose/syntastic'
 NeoBundleLazy 'Valloric/YouCompleteMe', {
-      \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby'] }
-      \}
+      \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby', 'rust'] }
+       \}
+NeoBundle 'rust-lang/rust.vim'  
 NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'godlygeek/tabular' " vim-markdown depends on this
 " NeoBundle 'plasticboy/vim-markdown'
@@ -60,6 +61,9 @@ NeoBundle 'vim-ruby/vim-ruby'
 
 " vim markdown setup
 let g:vim_markdown_folding_disabled = 1
+
+" rust completions via youcompleteme setup
+let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
 
 " Syntastic setup
 " set statusline+=%#warningmsg#

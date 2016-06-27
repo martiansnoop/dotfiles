@@ -19,7 +19,8 @@ then
 fi
 
 HOME_PATH=$HOME/bin
-export PATH=$HOME_PATH:$PATH
+RUST_PATH=$HOME/.cargo/bin
+export PATH=$HOME_PATH:$RUST_PATH:$PATH
 
 export EDITOR=vim
 
