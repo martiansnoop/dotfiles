@@ -24,7 +24,12 @@ NeoBundleLazy 'Valloric/YouCompleteMe', {
       \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby', 'rust'] }
        \}
 NeoBundle 'rust-lang/rust.vim'  
+NeoBundle 'cespare/vim-toml'
+NeoBundle 'stephpy/vim-yaml'
+NeoBundle 'hdima/python-syntax'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 " NeoBundle 'godlygeek/tabular' " vim-markdown depends on this
 " NeoBundle 'plasticboy/vim-markdown'
 
@@ -82,12 +87,14 @@ let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
 " like, so these should tidy it up a bit for you.
 let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
 set completeopt-=preview
 
 " Syntax highlighting and theme
 syntax on
 syntax enable
 colorscheme jellybeans 
+" set background=dark
 
 " Make j and k respect wrapped lines
 map <down> gj
@@ -139,3 +146,4 @@ nmap <silent> ,/ :nohlsearch<CR>
 cmap w!! w !sudo tee % >/dev/null
 
 set showcmd
+set shell=zsh
