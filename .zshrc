@@ -29,6 +29,7 @@ compdef pscp=scp
 
 alias ls="ls -laG"
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+alias epoch='date +%s'
 
 # Things I want to remember
 # rough lines of code  in a dir: "git ls-files | egrep '(xml|java|as|mxml|js|ts|html)$' | xargs wc -l"
