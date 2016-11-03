@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 if [[ $OSX == 1 ]]
 then
-  POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
+  POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/latest/bin
   BREW_PATH=/usr/local/bin
   export PATH=$BREW_PATH:$POSTGRES_PATH:$PATH
   export TERM=xterm-256color
