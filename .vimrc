@@ -4,20 +4,10 @@
 " of environments and I don't understand everything so I'm paranoid.
 set nocompatible
 
-" NeoBundle SETUP
-
- " Required:
- set runtimepath^=~/.vim/bundle/neobundle.vim/
-
- " Required:
- call neobundle#begin(expand('~/.vim/bundle/'))
-
- " Let NeoBundle manage NeoBundle
- " Required:
- NeoBundleFetch 'Shougo/neobundle.vim'
-
- " My Bundles here:
- " Refer to |:NeoBundle-examples|.
+" NeoBundle Setup
+set runtimepath^=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'Raimondi/delimitMate'
@@ -32,14 +22,13 @@ NeoBundle 'hdima/python-syntax'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler.vim'
+call neobundle#end()
 
- call neobundle#end()
-
- " Required:
- filetype plugin indent on
- " If there are uninstalled bundles found on startup,
- " this will conveniently prompt you to install them.
- NeoBundleCheck
+" NeoBundle requires this, I don't know why
+filetype plugin indent on
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
 
 " rust completions via youcompleteme setup
 let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
