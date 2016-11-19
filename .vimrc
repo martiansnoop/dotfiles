@@ -1,4 +1,7 @@
-" I don't actually know what this does but people think it's important
+" I found out what this does -- it turns off vi compatability mode. 
+" It's also a noop apparently because vim autmatically turns off vi mode 
+" when it sees a .vimrc, but I'm leaving it because I use this vimrc in lots
+" of environments and I don't understand everything so I'm paranoid.
 set nocompatible
 
 " NeoBundle SETUP
