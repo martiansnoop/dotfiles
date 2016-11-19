@@ -19,7 +19,6 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'leafgarland/typescript-vim'
-" NeoBundleLazy 'scrooloose/syntastic'
 NeoBundleLazy 'Valloric/YouCompleteMe', {
       \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby', 'rust'] }
        \}
@@ -30,8 +29,6 @@ NeoBundle 'hdima/python-syntax'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler.vim'
-" NeoBundle 'godlygeek/tabular' " vim-markdown depends on this
-" NeoBundle 'plasticboy/vim-markdown'
 
  call neobundle#end()
 
@@ -41,46 +38,8 @@ NeoBundle 'Shougo/vimfiler.vim'
  " this will conveniently prompt you to install them.
  NeoBundleCheck
 
-" VUNDLE SETUP
-" This is a thing that Vundle wants 
-" filetype off
-" set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-" let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'jelera/vim-javascript-syntax'
-" Plugin 'pangloss/vim-javascript'
-" Plugin 'nathanaelkane/vim-indent-guides'
-" Plugin 'Raimondi/delimitMate'
-" Plugin 'leafgarland/typescript-vim'
-" Plugin 'scrooloose/syntastic' " disable syntastic until I figure out how to
-" make it fast
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'godlygeek/tabular' " vim-markdown depends on this
-" Plugin 'plasticboy/vim-markdown'
-" do other plugin shit here before the call to vundle end
-" call vundle#end()            " required
-" filetype plugin indent on    " required
-
-" vim markdown setup
-let g:vim_markdown_folding_disabled = 1
-
 " rust completions via youcompleteme setup
 let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
-
-" Syntastic setup
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_typescript_checkers = ['tslint']
 
 " YouCompleteMe setup
 " YCM gives you popups and splits by default that some people might not
