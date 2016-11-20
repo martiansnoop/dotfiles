@@ -4,31 +4,19 @@
 " of environments and I don't understand everything so I'm paranoid.
 set nocompatible
 
-" NeoBundle Setup
-set runtimepath^=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'leafgarland/typescript-vim'
-NeoBundleLazy 'Valloric/YouCompleteMe', {
-      \    'autoload': { 'filetypes': ['javascript', 'typescript', 'ruby', 'rust'] }
-       \}
-NeoBundle 'rust-lang/rust.vim'  
-NeoBundle 'cespare/vim-toml'
-NeoBundle 'stephpy/vim-yaml'
-NeoBundle 'hdima/python-syntax'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimfiler.vim'
-call neobundle#end()
-
-" NeoBundle requires this, I don't know why
-filetype plugin indent on
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+call plug#begin('~/.vim/bundle/')
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'Raimondi/delimitMate'
+Plug 'leafgarland/typescript-vim'
+Plug 'Valloric/YouCompleteMe', 
+      \ { 'for': ['javascript', 'typescript', 'ruby','rust'], 'do': './install.py' }
+Plug 'rust-lang/rust.vim'  
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+Plug 'hdima/python-syntax'
+Plug 'vim-ruby/vim-ruby'
+call plug#end()
 
 " rust completions via youcompleteme setup
 let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
