@@ -38,6 +38,8 @@ colorscheme jellybeans
 " Make j and k respect wrapped lines
 map <down> gj
 map <up> gk
+map j gj
+map k gk
 
 " I got most of the following crap from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
