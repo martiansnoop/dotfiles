@@ -96,6 +96,9 @@ Team Dropbox (new)/
 .vagrant.d
 chef
 .vscode
+<<<<<<< 827e8ced96fdf6b924c5fc89aa22f5c4f779bd72
 .gnupg
 .zsh_history.LOCK
 .zsh_history.new
+.bundle
+
