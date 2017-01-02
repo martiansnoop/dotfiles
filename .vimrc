@@ -88,3 +88,4 @@ cmap w!! w !sudo tee % >/dev/null
 
 set showcmd
 set shell=zsh
+set cursorline
