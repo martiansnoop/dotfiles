@@ -101,4 +101,5 @@ chef
 .zsh_history.LOCK
 .zsh_history.new
 .bundle
+.subversion
 
