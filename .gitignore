@@ -102,4 +102,5 @@ chef
 .zsh_history.new
 .bundle
 .subversion
-
+tasks
+virtualenv
