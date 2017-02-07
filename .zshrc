@@ -36,3 +36,4 @@ alias epoch='date +%s'
 # what to put with tar to untar something: "tar xvzf"
 # generate a password of x characters: "openssl rand -base64 x" 
 # timestamp but with tz 'date +%Y-%m-%dT%H:%M:%S%z'
+# pretty print json: python -m json.tool
