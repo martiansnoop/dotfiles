@@ -44,10 +44,6 @@ map k gk
 " I got most of the following crap from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
-" Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
 set hidden
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is two spaces
