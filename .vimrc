@@ -75,9 +75,6 @@ set noerrorbells         " don't beep
 " temporarilty disable autoindent when pasting crap
 set pastetoggle=<F2> 
 
-" This clears the search buffer when you press ,/
-nmap <silent> ,/ :nohlsearch<CR>
-
 "reopen (now with sudo privileges) file that requires sudo to edit
 " do this by typing w!!
 cmap w!! w !sudo tee % >/dev/null
