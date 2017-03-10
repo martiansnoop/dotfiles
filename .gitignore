@@ -96,7 +96,6 @@ Team Dropbox (new)/
 .vagrant.d
 chef
 .vscode
-<<<<<<< 827e8ced96fdf6b924c5fc89aa22f5c4f779bd72
 .gnupg
 .zsh_history.LOCK
 .zsh_history.new
@@ -104,3 +103,12 @@ chef
 .subversion
 tasks
 virtualenv
+
+.vim/files/swap/*
+!.vim/files/swap/.gitkeep
+.vim/files/info/*
+!.vim/files/info/.gitkeep
+.vim/files/backup/*
+!.vim/files/backup/.gitkeep
+.vim/files/undo/*
+!.vim/files/undo/.gitkeep

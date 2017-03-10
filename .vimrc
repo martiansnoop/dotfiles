@@ -83,3 +83,23 @@ set pastetoggle=<F2>
 " do this by typing w!!
 cmap w!! w !sudo tee % >/dev/null
 
+" Put all temporary files under the same directory.
+" https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
+" First, make sure .vim/files and friends exist, otherwise vim will be unable
+" to use them: 
+"for dir in ['files', 'files/backup', 'files/swap', 'files/undo', 'files/info']
+"    let full_dir = $HOME.'/.vim/'.dir
+"    echom full_dir
+"    if !isdirectory(full_dir)
+"        call mkdir(full_dir)
+"    endif
+"endfor
+set backup
+set backupdir   =$HOME/.vim/files/backup/
+set backupext   =-vimbackup
+set backupskip  =
+set directory   =$HOME/.vim/files/swap//
+set updatecount =100
+set undofile
+set undodir     =$HOME/.vim/files/undo/
+set viminfo     ='100,n$HOME/.vim/files/info/viminfo
