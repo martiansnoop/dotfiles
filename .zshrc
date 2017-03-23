@@ -5,8 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-[[ $OSX == 1 ]] && plugins=(brew mvn zsh-syntax-highlighting)
-[[ $LINUX == 1 ]] && plugins=(zsh-syntax-highlighting)
+[[ $OSX == 1 ]] && plugins=(brew mvn)
 source $ZSH/oh-my-zsh.sh
 
 if [[ $OSX == 1 ]]
@@ -37,3 +36,8 @@ alias epoch='date +%s'
 # generate a password of x characters: "openssl rand -base64 x" 
 # timestamp but with tz 'date +%Y-%m-%dT%H:%M:%S%z'
 # pretty print json: python -m json.tool
+
+# https://github.com/zsh-users/zsh-syntax-highlighting
+# Initialize zsh-syntax-highlighting last, per their documentation
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+source .oh-my-zsh-custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
