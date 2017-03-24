@@ -40,4 +40,4 @@ alias epoch='date +%s'
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # Initialize zsh-syntax-highlighting last, per their documentation
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-source .oh-my-zsh-custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh-custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
