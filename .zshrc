@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-[[ $OSX == 1 ]] && plugins=(brew mvn)
+[[ $OSX == 1 ]] && plugins=(fast-git brew mvn)
 source $ZSH/oh-my-zsh.sh
 
 if [[ $OSX == 1 ]]
