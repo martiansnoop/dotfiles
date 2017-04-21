@@ -16,6 +16,7 @@ Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'hdima/python-syntax'
 Plug 'vim-ruby/vim-ruby'
+Plug 'elzr/vim-json'
 call plug#end()
 
 " rust completions via youcompleteme setup
