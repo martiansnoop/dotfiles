@@ -38,6 +38,7 @@ alias fuck="echo 'I hate everything too.'"
 # generate a password of x characters: "openssl rand -base64 x" 
 # timestamp but with tz 'date +%Y-%m-%dT%H:%M:%S%z'
 # pretty print json: python -m json.tool
+# epoch in seconds:  date +%s
 
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # Initialize zsh-syntax-highlighting last, per their documentation
