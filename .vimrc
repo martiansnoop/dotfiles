@@ -104,3 +104,18 @@ set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
+" custom statusline
+" see https://medium.com/@kadek/the-last-statusline-for-vim-a613048959b2
+set laststatus=2
+set statusline=
+set statusline+=%<\                       " cut at start
+set statusline+=%#function#
+set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
+set statusline+=%#function#
+set statusline+=%-40f\                    " path
+set statusline+=%=%1*%y%*%*\              " file type
+set statusline+=%10((%l,%c)%)\            " line and column
+set statusline+=%P                        " percentage of file
+hi StatusLine ctermbg=NONE cterm=NONE
+
