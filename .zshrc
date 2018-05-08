@@ -16,6 +16,7 @@ then
   export PATH=$BREW_PATH:$POSTGRES_PATH:$PATH
   export TERM=xterm-256color
   export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+  export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 fi
 
 HOME_PATH=$HOME/bin
