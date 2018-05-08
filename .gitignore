@@ -103,6 +103,8 @@ chef
 .subversion
 tasks
 virtualenv
+.electron/
+.password-store/
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
