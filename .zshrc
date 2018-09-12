@@ -1,6 +1,9 @@
 [[ `uname` == 'Linux' ]] && export LINUX=1
 [[ `uname` == 'Darwin' ]] && export OSX=1
 
+# turn on vim keybindings in terminal
+bindkey -v
+
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
