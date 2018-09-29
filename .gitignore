@@ -105,6 +105,8 @@ tasks
 virtualenv
 .electron/
 .password-store/
+.multirust
+.rustup/
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
