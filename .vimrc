@@ -9,8 +9,6 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
 Plug 'leafgarland/typescript-vim'
-Plug 'Valloric/YouCompleteMe', 
-      \ { 'for': ['javascript', 'typescript', 'ruby','rust'], 'do': './install.py' }
 Plug 'rust-lang/rust.vim'  
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
