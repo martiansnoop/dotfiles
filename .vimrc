@@ -6,6 +6,7 @@ set nocompatible
 
 call plug#begin('~/.vim/bundle/')
 Plug 'jelera/vim-javascript-syntax'
+Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
