@@ -8,13 +8,22 @@ call plug#begin('~/.vim/bundle/')
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
-Plug 'leafgarland/typescript-vim'
+let delimitMate_expand_cr = 1
+let delimitMate_matchpairs = "(:),[:],{:}"
+au FileType vim,html let b:delimitMate_matchpairs = "(:),[:],{:}"
+" Plug 'Valloric/YouCompleteMe', 
+"     \ { 'for': ['javascript', 'typescript', 'ruby','rust'], 'do': './install.py' }
 Plug 'rust-lang/rust.vim'  
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'hdima/python-syntax'
 Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
+Plug 'alvan/vim-closetag'
+Plug 'airblade/vim-gitgutter'
+set updatetime=100 "make the gutter markings show up sooner
+let g:gitgutter_map_keys = 0
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 " rust completions via youcompleteme setup
