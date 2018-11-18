@@ -26,6 +26,7 @@ set updatetime=100 "make the gutter markings show up sooner
 set signcolumn=yes
 let g:gitgutter_map_keys = 0
 Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " rust completions via youcompleteme setup
