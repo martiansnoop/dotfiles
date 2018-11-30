@@ -1,6 +1,8 @@
 [[ `uname` == 'Linux' ]] && export LINUX=1
 [[ `uname` == 'Darwin' ]] && export OSX=1
 
+export LANG=en_US.UTF-8
+
 # turn on vim keybindings in terminal
 bindkey -v
 
