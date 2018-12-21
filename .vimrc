@@ -97,6 +97,9 @@ cmap w!! w !sudo tee % >/dev/null
 "Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
+" use ; to enter command mode
+nnoremap ; :
+
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 " First, make sure .vim/files and friends exist, otherwise vim will be unable
