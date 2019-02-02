@@ -9,9 +9,3 @@ Just pulling a repo doesn't mean that the submodules will work as expected. Use 
 ```
 git submodule init && git submodule update && git submodule status
 ```
-
-# How to get Vundle working for vim
-
-Clone the Vundle repo: `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim` 
-
-In vim, `:PluginInstall`, outside of vim `vim +PluginInstall +qall`
