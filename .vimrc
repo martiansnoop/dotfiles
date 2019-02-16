@@ -52,7 +52,7 @@ noremap <up> gk
 noremap j gj
 noremap k gk
 
-" I got most of the following crap from here:
+" I got most of the following stuff from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
 set hidden        " allow switching with :e without writing 
