@@ -29,6 +29,7 @@ RUST_PATH=$HOME/.cargo/bin
 export PATH=$HOME_PATH:$RUST_PATH:$PATH
 
 export EDITOR=vim
+export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
 compdef pssh=ssh
 compdef pscp=scp

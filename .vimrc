@@ -27,6 +27,8 @@ set signcolumn=yes
 let g:gitgutter_map_keys = 0
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " rust completions via youcompleteme setup
@@ -45,6 +47,10 @@ syntax on
 syntax enable
 colorscheme jellybeans 
 " set background=dark
+
+" fzf function hotkeys
+nnoremap jj :Files<Cr>
+nnoremap jk :Rg<Cr>
 
 " Make j and k respect wrapped lines
 noremap <down> gj
