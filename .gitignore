@@ -107,6 +107,10 @@ virtualenv
 .password-store/
 .multirust
 .rustup/
+.fzf.bash
+.fzf.zsh
+.fzf/
+.tmux/
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
