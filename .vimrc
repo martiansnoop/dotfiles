@@ -29,6 +29,8 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'w0rp/ale'
+let g:ale_echo_msg_format = '[%linter%] %s'
 call plug#end()
 
 " rust completions via youcompleteme setup
