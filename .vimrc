@@ -27,7 +27,7 @@ set signcolumn=yes
 let g:gitgutter_map_keys = 0
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
 

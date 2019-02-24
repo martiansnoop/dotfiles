@@ -30,6 +30,7 @@ export PATH=$HOME_PATH:$RUST_PATH:$PATH
 
 export EDITOR=vim
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 compdef pssh=ssh
 compdef pscp=scp
