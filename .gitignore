@@ -111,6 +111,11 @@ virtualenv
 .fzf.zsh
 .fzf/
 .tmux/
+.ICEauthority
+.gnome/
+.mozilla/
+.pki/
+.sudo_as_admin_successful
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
