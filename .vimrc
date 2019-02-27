@@ -72,8 +72,6 @@ set tabstop=4
 set softtabstop=8
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
-set smarttab      " insert tabs on the start of a line according to
-                  "    shiftwidth, not tabstop
 set expandtab     " use spaces instead of tabs always
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
