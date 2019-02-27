@@ -69,7 +69,6 @@ set cursorline
 
 " tabs and spaces
 set tabstop=4
-set softtabstop=8
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab     " use spaces instead of tabs always
