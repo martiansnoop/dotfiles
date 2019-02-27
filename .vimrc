@@ -33,17 +33,6 @@ Plug 'w0rp/ale'
 let g:ale_echo_msg_format = '[%linter%] %s'
 call plug#end()
 
-" rust completions via youcompleteme setup
-let g:ycm_rust_src_path = '/usr/local/rustc-1.9.0/src/'
-
-" YouCompleteMe setup
-" YCM gives you popups and splits by default that some people might not
-" like, so these should tidy it up a bit for you.
-let g:ycm_add_preview_to_completeopt=0
-let g:ycm_confirm_extra_conf=0
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
-set completeopt-=preview
-
 " Syntax highlighting and theme
 syntax on
 syntax enable
