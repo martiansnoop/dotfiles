@@ -129,3 +129,5 @@ set statusline+=%10((%l,%c)%)\            " line and column
 set statusline+=%P                        " percentage of file
 hi StatusLine ctermbg=NONE cterm=NONE
 
+set exrc    " allow for project-specific vimrc files
+set secure  " don't let project-specific vimrc files do insecure stuff
