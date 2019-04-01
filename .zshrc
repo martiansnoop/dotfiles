@@ -35,7 +35,15 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 compdef pssh=ssh
 compdef pscp=scp
 
-alias ls="ls -laG"
+# G - colors
+# T - complete time info in long form
+# F - symbols based on isDirectory/isExec/isLink/etc
+# o - omit the group rom the long form
+# h - human-friendly sizes
+# a - include hidden
+# l - long form
+alias ls="ls -GTFo -hal"
+
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
 alias fuck="echo 'I hate everything too.'"
