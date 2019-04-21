@@ -21,6 +21,7 @@ Plug 'hdima/python-syntax'
 Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
 Plug 'alvan/vim-closetag'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.ts'
 Plug 'airblade/vim-gitgutter'
 set updatetime=100 "make the gutter markings show up sooner
 set signcolumn=yes
