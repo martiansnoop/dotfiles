@@ -17,9 +17,6 @@ au FileType vim,html let b:delimitMate_matchpairs = "(:),[:],{:}"
 Plug 'rust-lang/rust.vim'  
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
-Plug 'hdima/python-syntax'
-Plug 'vim-ruby/vim-ruby'
-Plug 'elzr/vim-json'
 Plug 'alvan/vim-closetag'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.ts'
 Plug 'airblade/vim-gitgutter'
@@ -50,6 +47,9 @@ noremap <down> gj
 noremap <up> gk
 noremap j gj
 noremap k gk
+
+" get json syntax highlighting via javascript
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " I got most of the following stuff from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
