@@ -122,14 +122,18 @@ set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 " see https://medium.com/@kadek/the-last-statusline-for-vim-a613048959b2
 set laststatus=2
 set statusline=
-set statusline+=%<\                       " cut at start
-set statusline+=%#function#
+set statusline+=%#function#               " use color of function keyword
 set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
 set statusline+=%#function#
 set statusline+=%-40f\                    " path
-set statusline+=%=%1*%y%*%*\              " file type
-set statusline+=%10((%l,%c)%)\            " line and column
-set statusline+=%P                        " percentage of file
+" set statusline+=\ %b                      " value of character under cursor
+" set statusline+=\ 0x%B                    " value of character in hex
+
+set statusline+=%=                        " switch to the right side
+set statusline+=%y                        " filetype
+set statusline+=\ %{(&fenc!=''?&fenc:&enc)} " encoding
+set statusline+=\ (%l,%c)                 " line and column
+set statusline+=\ %p%%                    " percentage of file
 hi StatusLine ctermbg=NONE cterm=NONE
 
 set exrc    " allow for project-specific vimrc files
