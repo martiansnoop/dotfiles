@@ -13,7 +13,12 @@
 .cargo
 .chef
 .chef-bak
-.config
+.config/*
+!.config/autokey/
+.config/autokey/autokey.json
+.config/autokey/autokey.json~
+.config/autokey/autokey.log
+.config/autokey/autokey.pid
 .dropbox
 .dropbox-master
 .fontconfig
