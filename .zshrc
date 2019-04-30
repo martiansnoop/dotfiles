@@ -42,7 +42,7 @@ compdef pscp=scp
 # h - human-friendly sizes
 # a - include hidden
 # l - long form
-alias ls="ls -GTFo -hal"
+alias ls="ls -GFo -hal --time-style=locale"
 
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
