@@ -1,5 +1,5 @@
 {
-    "usageCount": 13, 
+    "usageCount": 10, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "copy", 
@@ -20,12 +20,11 @@
     "modes": [
         3
     ], 
-    "showInTrayMenu": true, 
-    "matchCase": false, 
+    "showInTrayMenu": false, 
     "filter": {
         "regex": null, 
         "isRecursive": false
     }, 
-    "type": "phrase", 
-    "sendMode": "kb"
+    "type": "script", 
+    "store": {}
 }
