@@ -56,6 +56,9 @@ alias fuck="echo 'I hate everything too.'"
 # pretty print json: python -m json.tool
 # epoch in seconds:  date +%s
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # Initialize zsh-syntax-highlighting last, per their documentation
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
