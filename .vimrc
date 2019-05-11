@@ -31,6 +31,7 @@ Plug 'w0rp/ale'
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " Syntax highlighting and theme
