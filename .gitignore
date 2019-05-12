@@ -116,6 +116,7 @@ virtualenv
 .mozilla/
 .pki/
 .sudo_as_admin_successful
+.yarnrc
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
