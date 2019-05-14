@@ -25,6 +25,7 @@ let g:gitgutter_map_keys = 0
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround' "ysiw]
+Plug 'tpope/vim-repeat' "ysiw]
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
