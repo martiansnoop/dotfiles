@@ -54,6 +54,9 @@ noremap k gk
 " get json syntax highlighting via javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" set up markdown files wrap lines and break on words
+autocmd FileType markdown setlocal wrap linebreak
+
 " I got most of the following stuff from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
