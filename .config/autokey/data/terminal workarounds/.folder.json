@@ -1,8 +1,5 @@
 {
-    "usageCount": 25, 
-    "omitTrigger": false, 
-    "prompt": false, 
-    "description": "paste", 
+    "usageCount": 0, 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -11,20 +8,16 @@
         "backspace": true, 
         "triggerInside": false
     }, 
+    "modes": [], 
+    "title": "terminal workarounds", 
     "hotkey": {
-        "hotKey": "v", 
-        "modifiers": [
-            "<super>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
-    "modes": [
-        3
-    ], 
-    "showInTrayMenu": false, 
     "filter": {
         "regex": null, 
         "isRecursive": false
     }, 
-    "type": "script", 
-    "store": {}
+    "type": "folder", 
+    "showInTrayMenu": false
 }

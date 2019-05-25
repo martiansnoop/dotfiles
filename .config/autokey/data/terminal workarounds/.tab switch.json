@@ -1,8 +1,8 @@
 {
-    "usageCount": 25, 
+    "usageCount": 37, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "paste", 
+    "description": "tab switch", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,9 +12,9 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "v", 
+        "hotKey": "<tab>", 
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ]
     }, 
     "modes": [
