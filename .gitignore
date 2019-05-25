@@ -122,6 +122,19 @@ virtualenv
 .pki/
 .sudo_as_admin_successful
 .yarnrc
+.cinnamon/
+.dbus/
+.gksu.lock
+.secureConnect/
+.xsession-errors
+.xsession-errors.old
+mon/
+.dbus/
+.gksu.lock
+.secureConnect/
+.xsession-errors
+.xsession-errors.old
+
 
 .vim/files/swap/*
 !.vim/files/swap/.gitkeep
