@@ -135,6 +135,7 @@ mon/
 .secureConnect/
 .xsession-errors
 .xsession-errors.old
+.yvm
 
 
 .vim/files/swap/*
