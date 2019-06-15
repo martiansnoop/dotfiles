@@ -1,6 +1,3 @@
-[[ `uname` == 'Linux' ]] && export LINUX=1
-[[ `uname` == 'Darwin' ]] && export OSX=1
-
 export LANG=en_US.UTF-8
 
 # turn on vim keybindings in terminal
@@ -10,19 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ewenberg"
 DISABLE_AUTO_UPDATE="true"
 ZSH_CUSTOM=~/.oh-my-zsh-custom
-[[ $OSX == 1 ]] && plugins=(fast-git mvn)
-[[ $LINUX == 1 ]] && plugins=(fast-git)
+plugins=(fast-git)
 source $ZSH/oh-my-zsh.sh
-
-if [[ $OSX == 1 ]]
-then
-  POSTGRES_PATH=/Applications/Postgres.app/Contents/Versions/latest/bin
-  BREW_PATH=/usr/local/bin
-  export PATH=$BREW_PATH:$POSTGRES_PATH:$PATH
-  export TERM=xterm-256color
-  export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
-  export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-fi
 
 HOME_PATH=$HOME/bin
 RUST_PATH=$HOME/.cargo/bin
