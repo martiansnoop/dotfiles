@@ -18,9 +18,6 @@ export EDITOR=vim
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-compdef pssh=ssh
-compdef pscp=scp
-
 # G - colors
 # T - complete time info in long form
 # F - symbols based on isDirectory/isExec/isLink/etc
