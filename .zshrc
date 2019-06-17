@@ -25,7 +25,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 # h - human-friendly sizes
 # a - include hidden
 # l - long form
-alias ls="ls -GFo -hal --time-style=locale"
+alias ls="ls -GFo -hal --time-style=locale --color=auto"
 
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
