@@ -3,12 +3,12 @@ export LANG=en_US.UTF-8
 # turn on vim keybindings in terminal
 bindkey -v
 
-export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="ewenberg"
-DISABLE_AUTO_UPDATE="true"
-ZSH_CUSTOM=~/.oh-my-zsh-custom
-plugins=(fast-git)
-source $ZSH/oh-my-zsh.sh
+source ~/.no-my-zsh/init.zsh
+
+color='%B%F{black}'
+decolor='%b%f'
+PROMPT="$color%n@%2m > $decolor"
+RPROMPT="$color%3~$decolor"
 
 HOME_PATH=$HOME/bin
 RUST_PATH=$HOME/.cargo/bin
@@ -27,6 +27,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 # l - long form
 alias ls="ls -GFo -hal --time-style=locale --color=auto"
 
+alias dirs='dirs -v'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
 alias fuck="echo 'I hate everything too.'"
