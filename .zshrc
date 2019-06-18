@@ -7,7 +7,7 @@ source ~/.no-my-zsh/init.zsh
 
 color='%B%F{black}'
 decolor='%b%f'
-PROMPT='$color%n@%2m > $decolor'
+PROMPT='$color%n@%m > $decolor'
 RPROMPT='$color%3~ [$(git_prompt_info)]$decolor'
 
 
