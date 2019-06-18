@@ -7,8 +7,9 @@ source ~/.no-my-zsh/init.zsh
 
 color='%B%F{black}'
 decolor='%b%f'
-PROMPT="$color%n@%2m > $decolor"
-RPROMPT="$color%3~$decolor"
+PROMPT='$color%n@%2m > $decolor'
+RPROMPT='$color%3~ [$(git_prompt_info)]$decolor'
+
 
 HOME_PATH=$HOME/bin
 RUST_PATH=$HOME/.cargo/bin
