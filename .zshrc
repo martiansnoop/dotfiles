@@ -32,6 +32,7 @@ alias dirs='dirs -v'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
 alias fuck="echo 'I hate everything too.'"
+alias xclip="xclip -sel clip"
 
 # Things I want to remember
 # rough lines of code  in a dir: "git ls-files | egrep '(xml|java|as|mxml|js|ts|html)$' | xargs wc -l"

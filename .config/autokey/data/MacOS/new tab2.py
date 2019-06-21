@@ -2,4 +2,5 @@ if window.get_active_class() in ['Alacritty.Alacritty', 'gnome-terminal-server.G
     keyboard.send_keys("<ctrl>+b")
     keyboard.send_keys("c")
 else:
+    time.sleep(.1)
     keyboard.send_keys("<ctrl>+t")
