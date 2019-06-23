@@ -4,11 +4,7 @@ export LANG=en_US.UTF-8
 bindkey -v
 
 source ~/.no-my-zsh/init.zsh
-
-color='%B%F{black}'
-decolor='%b%f'
-PROMPT='$color%n@%m > $decolor'
-RPROMPT='$color$(git_prompt_info) %3~$decolor'
+source ~/.no-my-zsh/prompt.zsh
 
 HOME_PATH=$HOME/bin
 RUST_PATH=$HOME/.cargo/bin

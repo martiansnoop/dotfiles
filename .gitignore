@@ -16,6 +16,9 @@
 !.gitmodules
 !.ignore
 !.no-my-zsh
+!.no-my-zsh/lib
+!.no-my-zsh/init.zsh
+!.no-my-zsh/prompt.zsh
 !.oh-my-zsh
 !.oh-my-zsh-custom
 !.tmux.conf
