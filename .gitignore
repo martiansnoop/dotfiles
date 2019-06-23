@@ -19,6 +19,7 @@
 .config/autokey/autokey.json~
 .config/autokey/autokey.log
 .config/autokey/autokey.pid
+!.config/base16-gnome-terminal
 .dropbox
 .dropbox-master
 .fontconfig
