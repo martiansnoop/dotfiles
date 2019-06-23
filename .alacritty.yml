@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -314,8 +314,8 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /usr/bin/zsh
 #  args:
 #    - --login
 
@@ -518,8 +518,8 @@ mouse_bindings:
 # be mapped to the `None` action.
 key_bindings:
   # (Windows/Linux only)
-  #- { key: V,        mods: Control|Shift, action: Paste            }
-  #- { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: V,        mods: Super,          action: Paste            }
+  - { key: C,        mods: Super,          action: Copy             }
   #- { key: Insert,   mods: Shift,         action: PasteSelection   }
   #- { key: Key0,     mods: Control,       action: ResetFontSize    }
   #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
@@ -648,3 +648,9 @@ key_bindings:
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                      }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                      }
   - { key: NumpadEnter,             chars: "\n"                              }
+
+# window management controls for tmux
+  - { key: Tab,     mods: Control,        chars: "\x02\x6e"} # ctrl b, n
+  - { key: Tab,     mods: Control|Shift,  chars: "\x02\x70"} # ctrl b, p
+  - { key: T,       mods: Super,          chars: "\x02\x63"} # ctrl b, c
+  - { key: W,       mods: Super,          chars: "\x02\x78"} # ctrl b, x
