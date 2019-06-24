@@ -1,9 +1,10 @@
 # Ignore everything
-*
+/**
 
 # Except these things
 !.alacritty.yml
 !.config/autokey/
+!.config/autokey/**
 .config/autokey/autokey.json
 .config/autokey/autokey.json~
 .config/autokey/autokey.log
@@ -15,14 +16,13 @@
 !.gitignoreGlobal
 !.gitmodules
 !.ignore
-!.no-my-zsh
-!.no-my-zsh/lib
-!.no-my-zsh/init.zsh
-!.no-my-zsh/prompt.zsh
+!.no-my-zsh/
+!.no-my-zsh/**
 !.oh-my-zsh
-!.oh-my-zsh-custom
+!.oh-my-zsh-custom/
+!.oh-my-zsh-custom/**
 !.tmux.conf
-!.vim
+!.vim/
 !.vimrc
 !.zshrc
 !README.md
