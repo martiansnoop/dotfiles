@@ -1,3 +1,5 @@
+# quote-magic escapes chars in urls while you type
+# paste-magic does the same when you paste a url
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 autoload -Uz url-quote-magic
