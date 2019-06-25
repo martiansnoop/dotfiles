@@ -24,6 +24,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias ls="ls -GFo -hal --time-style=locale --color=auto"
 
 alias dirs='dirs -v'
+alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias epoch='date +%s'
 alias fuck="echo 'I hate everything too.'"
