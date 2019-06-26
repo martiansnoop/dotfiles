@@ -3,13 +3,13 @@
 color='%B%F{black}'
 decolor='%b%f'
 
-omg_color='%B%F{001}'
+omg_color='%b%F{001}'
 
-PROMPT='$color%n@%m $omg_color$(error_status)$color> $decolor'
+PROMPT='$omg_color$(error_status)$color%n@%m> $decolor'
 RPROMPT='$color$(git_prompt_info) %3~$decolor'
 
 function error_status() {
     last_command=$?
-    [[ last_command -ne 0 ]] && echo " [$last_command] "
+    [[ last_command -ne 0 ]] && echo "!"
 }
 
