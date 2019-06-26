@@ -30,6 +30,7 @@ autoload -U colors && colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-setopt auto_cd
+# this lets you chain file redirects, I guess
 setopt multios
+# allow variables to be computed in your prompt
 setopt prompt_subst
