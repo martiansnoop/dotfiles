@@ -93,8 +93,8 @@ set ignorecase    " ignore case when searching
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
-" temporarilty disable autoindent when pasting crap
-set pastetoggle=<F2> 
+" temporarily disable autoindent when pasting
+set pastetoggle=<F2>
 
 "reopen (now with sudo privileges) file that requires sudo to edit
 " do this by typing w!!
