@@ -33,6 +33,7 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ap/vim-buftabline'
 call plug#end()
 
 " Syntax highlighting and theme
@@ -40,6 +41,18 @@ syntax on
 syntax enable
 colorscheme jellybeans
 " set background=dark
+
+let mapleader = "j"
+" ctags shortcuts
+nnoremap <leader>f <C-]>   " (f)ind definition
+nnoremap <leader>g <C-t>   " (g)o back
+" buffer management shortcuts
+nnoremap <leader>h :bp<cr> " prev buffer
+nnoremap <leader>l :bn<cr> " next buffer
+nnoremap <leader>w :bd<cr> " close buffer
+" no really, please close .netrw buffers
+autocmd FileType netrw setl bufhidden=delete
+let g:netrw_fastbrowse = 0
 
 " fzf function hotkeys
 nnoremap jj :Files<Cr>
