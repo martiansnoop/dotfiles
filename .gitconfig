@@ -1,8 +1,6 @@
 [user]
     name = Emily Wenberg
     email = martiansnoop@gmail.com
-[credential]
-    helper = osxkeychain
 [core]
     autocrlf = input
     excludesfile = /Users/ewenberg/.gitignoreGlobal
