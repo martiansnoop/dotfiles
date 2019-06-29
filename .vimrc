@@ -1,5 +1,5 @@
-" I found out what this does -- it turns off vi compatability mode. 
-" It's also a noop apparently because vim autmatically turns off vi mode 
+" I found out what this does -- it turns off vi compatability mode.
+" It's also a noop apparently because vim autmatically turns off vi mode
 " when it sees a .vimrc, but I'm leaving it because I use this vimrc in lots
 " of environments and I don't understand everything so I'm paranoid.
 set nocompatible
@@ -11,9 +11,9 @@ Plug 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
 let delimitMate_matchpairs = "(:),[:],{:}"
 au FileType vim,html let b:delimitMate_matchpairs = "(:),[:],{:}"
-" Plug 'Valloric/YouCompleteMe', 
+" Plug 'Valloric/YouCompleteMe',
 "     \ { 'for': ['javascript', 'typescript', 'ruby','rust'], 'do': './install.py' }
-Plug 'rust-lang/rust.vim'  
+Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'alvan/vim-closetag'
@@ -38,7 +38,7 @@ call plug#end()
 " Syntax highlighting and theme
 syntax on
 syntax enable
-colorscheme jellybeans 
+colorscheme jellybeans
 " set background=dark
 
 " fzf function hotkeys
@@ -64,14 +64,14 @@ set splitright
 " I got most of the following stuff from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
-set hidden        " allow switching with :e without writing 
+set hidden        " allow switching with :e without writing
 set nowrap
 set number        " always show line numbers
 set history=1000
 set undolevels=1000
 set visualbell
 set noerrorbells
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title         " change the terminal's title to name of file
@@ -109,7 +109,7 @@ nnoremap ; :
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 " First, make sure .vim/files and friends exist, otherwise vim will be unable
-" to use them: 
+" to use them:
 "for dir in ['files', 'files/backup', 'files/swap', 'files/undo', 'files/info']
 "    let full_dir = $HOME.'/.vim/'.dir
 "    echom full_dir
