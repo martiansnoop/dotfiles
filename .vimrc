@@ -57,6 +57,10 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 " set up markdown files wrap lines and break on words
 autocmd FileType markdown setlocal wrap linebreak
 
+" new splits will be at the bottom or to the right side of the screen
+set splitbelow
+set splitright
+
 " I got most of the following stuff from here:
 "  http://nvie.com/posts/how-i-boosted-my-vim/
 
