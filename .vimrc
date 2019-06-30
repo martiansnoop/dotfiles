@@ -50,9 +50,9 @@ let mapleader = "j"
 nnoremap <leader>f <C-]>   " (f)ind definition
 nnoremap <leader>g <C-t>   " (g)o back
 " buffer management shortcuts
-nnoremap <leader>h :bp<cr> " prev buffer
-nnoremap <leader>l :bn<cr> " next buffer
-nnoremap <leader>w :bd<cr> " close buffer
+nnoremap <S-Tab>   :bp<cr> " prev buffer
+nnoremap <Tab>     :bn<cr> " next buffer
+nnoremap <leader>d :bd<cr> " close buffer
 " no really, please close .netrw buffers
 autocmd FileType netrw setl bufhidden=delete
 let g:netrw_fastbrowse = 0
