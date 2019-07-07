@@ -10,6 +10,7 @@
 .config/autokey/autokey.log
 .config/autokey/autokey.pid
 !.config/base16-gnome-terminal
+!.ctags
 !.eslintrc.js
 !.gitconfig
 !.gitignore
