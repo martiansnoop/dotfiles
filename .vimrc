@@ -38,6 +38,7 @@ let g:buftabline_show = 1       " only show if >1 buffer
 let g:buftabline_numbers = 1    " show buffer number
 let g:buftabline_indicators = 1 " indicate if modified
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Syntax highlighting and theme
@@ -61,6 +62,12 @@ let g:netrw_fastbrowse = 0
 " fzf function hotkeys
 nnoremap jj :Files<Cr>
 nnoremap jk :Rg<Cr>
+
+" nerdtree config
+nnoremap jn :NERDTreeToggle<Cr>
+let NERDTreeMinimalUI=1 " no help lines
+" close vim if only remaining window is nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Make j and k respect wrapped lines
 noremap <down> gj
