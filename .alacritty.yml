@@ -518,8 +518,6 @@ mouse_bindings:
 # be mapped to the `None` action.
 key_bindings:
   # (Windows/Linux only)
-  - { key: V,        mods: Super,          action: Paste            }
-  - { key: C,        mods: Super,          action: Copy             }
   #- { key: Insert,   mods: Shift,         action: PasteSelection   }
   #- { key: Key0,     mods: Control,       action: ResetFontSize    }
   #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
@@ -538,7 +536,6 @@ key_bindings:
   #- { key: V,      mods: Command,         action: Paste            }
   #- { key: C,      mods: Command,         action: Copy             }
   #- { key: H,      mods: Command,         action: Hide             }
-  #- { key: Q,      mods: Command,         action: Quit             }
   #- { key: W,      mods: Command,         action: Quit             }
   #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
 
@@ -654,3 +651,11 @@ key_bindings:
   - { key: Tab,     mods: Control|Shift,  chars: "\x02\x70"} # ctrl b, p
   - { key: T,       mods: Super,          chars: "\x02\x63"} # ctrl b, c
   - { key: W,       mods: Super,          chars: "\x02\x78"} # ctrl b, x
+
+# copy/paste
+  - { key: V,       mods: Control,        action: Paste}
+  - { key: C,       mods: Control,        action: Copy }
+  - { key: V,       mods: Control|Shift,  chars: "\x16"}     # ctrl v
+  - { key: C,       mods: Control|Shift,  chars: "\x03"}     # ctrl c
+
+  - { key: Q,       mods: Control,           action: Quit }
