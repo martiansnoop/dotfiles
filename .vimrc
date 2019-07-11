@@ -173,5 +173,9 @@ set statusline+=\ (%l,%c)                 " line and column
 set statusline+=\ %p%%                    " percentage of file
 hi StatusLine ctermbg=NONE cterm=NONE
 
+if filereadable(expand('~/.vim/work_specific.vim'))
+    source ~/.vim/work_specific.vim
+endif
+
 set exrc    " allow for project-specific vimrc files
 set secure  " don't let project-specific vimrc files do insecure stuff
