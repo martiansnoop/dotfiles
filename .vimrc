@@ -6,7 +6,7 @@ set nocompatible
 
 call plug#begin('~/.vim/bundle/')
 Plug 'jelera/vim-javascript-syntax'
-Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
 let delimitMate_matchpairs = "(:),[:],{:}"
