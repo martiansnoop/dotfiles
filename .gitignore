@@ -24,6 +24,7 @@
 !.oh-my-zsh-custom/**
 !.tmux.conf
 !.vim/
+!.vim/personal_specific.vim
 !.vimrc
 !.zshrc
 !README.md

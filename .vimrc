@@ -41,8 +41,14 @@ Plug 'ap/vim-buftabline'
 let g:buftabline_show = 1       " only show if >1 buffer
 let g:buftabline_numbers = 1    " show buffer number
 let g:buftabline_indicators = 1 " indicate if modified
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'scrooloose/nerdtree'
+
+if filereadable(expand('~/.vim/work_specific.vim'))
+    source ~/.vim/work_specific.vim
+else
+    source ~/.vim/personal_specific.vim
+endif
+
 call plug#end()
 
 " Syntax highlighting and theme
@@ -52,9 +58,7 @@ colorscheme jellybeans
 " set background=dark
 
 let mapleader = "j"
-" ctags shortcuts
-nnoremap <leader>f <C-]>   " (f)ind definition
-nnoremap <leader>g <C-t>   " (g)o back
+
 " buffer management shortcuts
 nnoremap <S-Tab>   :bp<cr> " prev buffer
 nnoremap <Tab>     :bn<cr> " next buffer
@@ -107,9 +111,7 @@ set showcmd
 set shell=zsh
 set cursorline
 
-" tabs and spaces
-set tabstop=4
-set shiftwidth=4  " number of spaces to use for autoindenting
+" tabs and spaces (tabstop/shiftwidth set in personal/work vimrcs)
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab     " use spaces instead of tabs always
 set autoindent    " always set autoindenting on
@@ -172,10 +174,6 @@ set statusline+=\ %{(&fenc!=''?&fenc:&enc)} " encoding
 set statusline+=\ (%l,%c)                 " line and column
 set statusline+=\ %p%%                    " percentage of file
 hi StatusLine ctermbg=NONE cterm=NONE
-
-if filereadable(expand('~/.vim/work_specific.vim'))
-    source ~/.vim/work_specific.vim
-endif
 
 set exrc    " allow for project-specific vimrc files
 set secure  " don't let project-specific vimrc files do insecure stuff
