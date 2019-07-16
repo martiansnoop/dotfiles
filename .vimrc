@@ -160,6 +160,10 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
+set wildmenu
+set wildmode=full
+hi WildMenu cterm=underline,bold
+
 " custom statusline
 " see https://medium.com/@kadek/the-last-statusline-for-vim-a613048959b2
 set laststatus=2
@@ -176,7 +180,7 @@ set statusline+=%y                        " filetype
 set statusline+=\ %{(&fenc!=''?&fenc:&enc)} " encoding
 set statusline+=\ (%l,%c)                 " line and column
 set statusline+=\ %p%%                    " percentage of file
-hi StatusLine ctermbg=NONE cterm=NONE
+hi StatusLine ctermbg=000 cterm=NONE ctermfg=White
 
 set exrc    " allow for project-specific vimrc files
 set secure  " don't let project-specific vimrc files do insecure stuff
