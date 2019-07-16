@@ -57,10 +57,10 @@ syntax enable
 colorscheme jellybeans
 " set background=dark
 
-map <F3> :mksession! ~/.vim/session <cr> " Quick write session with F3
-map <F4> :source ~/.vim/session <cr>     " And load session with F4
-
 let mapleader = "j"
+
+map <leader>ss :mksession! ~/.vim/session <cr> " Quick write session
+map <leader>sr :source ~/.vim/session <cr>     " And load session
 
 " buffer management shortcuts
 nnoremap <S-Tab>   :bp<cr> " prev buffer
