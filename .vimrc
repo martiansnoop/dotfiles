@@ -35,6 +35,7 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_pattern_options = {
 \   '.*\.ts$': {'ale_enabled': 0},
 \   '.*\.ng.html$': {'ale_enabled': 0},
+\   '.*\.scss$': {'ale_enabled': 0},
 \}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ap/vim-buftabline'
