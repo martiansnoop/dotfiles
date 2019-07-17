@@ -42,7 +42,6 @@ let g:ale_pattern_options = {
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ap/vim-buftabline'
 let g:buftabline_show = 1       " only show if >1 buffer
-let g:buftabline_numbers = 1    " show buffer number
 let g:buftabline_indicators = 1 " indicate if modified
 Plug 'scrooloose/nerdtree'
 
