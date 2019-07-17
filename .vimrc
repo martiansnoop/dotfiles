@@ -62,6 +62,7 @@ let mapleader = "j"
 
 map <leader>ss :mksession! ~/.vim/session <cr> " Quick write session
 map <leader>sr :source ~/.vim/session <cr>     " And load session
+set sessionoptions=buffers,curdir,folds,help
 
 " buffer management shortcuts
 nnoremap <S-Tab>   :bp<cr> " prev buffer
