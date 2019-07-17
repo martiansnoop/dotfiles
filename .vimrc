@@ -3,6 +3,7 @@
 " when it sees a .vimrc, but I'm leaving it because I use this vimrc in lots
 " of environments and I don't understand everything so I'm paranoid.
 set nocompatible
+let mapleader = "j"
 
 call plug#begin('~/.vim/bundle/')
 Plug 'jelera/vim-javascript-syntax'
@@ -57,8 +58,6 @@ syntax on
 syntax enable
 colorscheme jellybeans
 " set background=dark
-
-let mapleader = "j"
 
 map <leader>ss :mksession! ~/.vim/session <cr> " Quick write session
 map <leader>sr :source ~/.vim/session <cr>     " And load session
