@@ -3,6 +3,7 @@
 " when it sees a .vimrc, but I'm leaving it because I use this vimrc in lots
 " of environments and I don't understand everything so I'm paranoid.
 set nocompatible
+set autoread " automatically read files that are changed in the filesystem 
 let mapleader = "j"
 
 call plug#begin('~/.vim/bundle/')
