@@ -22,6 +22,8 @@
 !.oh-my-zsh
 !.oh-my-zsh-custom/
 !.oh-my-zsh-custom/**
+!.shell_plugins/
+!.shell_plugins/**
 !.tmux.conf
 !.vim/
 !.vim/personal_specific.vim
