@@ -82,11 +82,9 @@ let NERDTreeMinimalUI=1 " no help lines
 " close vim if only remaining window is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Make j and k respect wrapped lines
+" Make up and down respect wrapped lines
 noremap <down> gj
 noremap <up> gk
-noremap j gj
-noremap k gk
 
 " get json syntax highlighting via javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
