@@ -57,8 +57,14 @@ call plug#end()
 " Syntax highlighting and theme
 syntax on
 syntax enable
-colorscheme jellybeans
 " set background=dark
+let g:jellybeans_overrides = {
+\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+\}
+if has('termguicolors') && &termguicolors
+    let g:jellybeans_overrides['background']['guibg'] = 'none'
+endif
+colorscheme jellybeans
 
 map <leader>ss :mksession! ~/.vim/session <cr> " Quick write session
 map <leader>sr :source ~/.vim/session <cr>     " And load session
