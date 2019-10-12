@@ -30,16 +30,6 @@ Plug 'tpope/vim-surround' "ysiw]
 Plug 'tpope/vim-repeat' "ysiw]
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
-let g:ale_echo_msg_format = '[%linter%] %s'
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 0
-let g:ale_pattern_options = {
-\   '.*\.ts$': {'ale_enabled': 0},
-\   '.*\.ng.html$': {'ale_enabled': 0},
-\   '.*\.scss$': {'ale_enabled': 0},
-\   '.*\.java$': {'ale_enabled': 0},
-\}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ap/vim-buftabline'
 let g:buftabline_show = 1       " only show if >1 buffer
