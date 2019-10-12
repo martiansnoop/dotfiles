@@ -62,7 +62,7 @@ set sessionoptions=buffers,curdir,folds,help
 " buffer management shortcuts
 nnoremap <S-Tab>   :bp<cr> " prev buffer
 nnoremap <Tab>     :bn<cr> " next buffer
-nnoremap <leader>d :bd<cr> " close buffer
+nnoremap <leader>q :bd<cr> " close buffer
 " no really, please close .netrw buffers
 autocmd FileType netrw setl bufhidden=delete
 let g:netrw_fastbrowse = 0
