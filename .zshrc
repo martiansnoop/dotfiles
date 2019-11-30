@@ -5,6 +5,11 @@ bindkey -v
 
 source ~/.no-my-zsh/init.zsh
 source ~/.no-my-zsh/prompt.zsh
+# disable reverse-menu-complete on shift-tab
+# This means that shift-tab no longer navigates backwards through
+# matches, because it triggers unwantedly when I have not entered
+# text. I think this is fine because I can still use arrow keys.
+bindkey -r '^[[Z'
 
 HOME_PATH=$HOME/bin
 RUST_PATH=$HOME/.cargo/bin
